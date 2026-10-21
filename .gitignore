@@ -1,0 +1,9 @@
+target/
+*.log
+.idea/
+.env
+.local/
+artifacts/
+exports/
+logs/
+config/database.properties
