@@ -1,4 +1,4 @@
-# Monitoreo competitivo de precios
+# Monitoreo competitivo de precios.
 
 Aplicación de escritorio en Java 21 con JavaFX, Jsoup, JDBC y PostgreSQL. Implementa acceso por roles, catálogo, fuentes configurables, extracción de fichas reales, homologación, comparación económica, alertas, históricos y exportación PDF/CSV. Los costos y precios propios de los ejemplos son ficticios y editables.
 
