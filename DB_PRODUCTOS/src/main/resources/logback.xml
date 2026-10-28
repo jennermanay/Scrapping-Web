@@ -1,0 +1,15 @@
+<configuration>
+  <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>logs/monitoreo.log</file>
+    <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+      <fileNamePattern>logs/monitoreo.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
+      <maxFileSize>1MB</maxFileSize><maxHistory>7</maxHistory><totalSizeCap>20MB</totalSizeCap>
+    </rollingPolicy>
+    <encoder><charset>UTF-8</charset><pattern>%date %-5level %logger{36} - %msg%n</pattern></encoder>
+  </appender>
+  <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder><charset>UTF-8</charset><pattern>%level %logger{24} - %msg%n</pattern></encoder>
+  </appender>
+  <logger name="org.apache.poi" level="WARN"/>
+  <root level="INFO"><appender-ref ref="FILE"/><appender-ref ref="CONSOLE"/></root>
+</configuration>
